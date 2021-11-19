@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head:meta></head:meta>
+	<!-- Sea of images - v1.0.0 -->
+	<!-- coder: Reza Dehghani Website: jetcode.blog.ir -->
+	<head:script></head:script>
+	<title>Image Blog</title>
+	<head:style></head:style>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="print">
+	<h1>(*blog_title*)</h1>
+	<check:if blog_short_description><h2>(*blog_short_description*)</h2></check:if>
+	</div>
+	<!-- شروع خلاصه مطلب -->
+				<box:post_list>
+					<check:if post_list_title>
+						<div class="align">
+							<div class="messages">
+								<div class="messages-content">
+									<h3>(*post_list_title*)</h3>
+								</div>
+							</div>
+						</div>
+					</check:if>
+					<div class="post left-0">
+						<view:post_list>
+							<div class="post_list">
+								<div class="post_list_item">
+									<div class="postlist-details">
+										<ul>
+											<check:if post_date><li class="postlist-detail-date">(*post_date format='%A, %e %B %y'*)</li></check:if>
+											<check:if post_author><li class="postlist-detail-author">(*post_author*)</li></check:if>
+											<li class="postlist-detail-comment"><a href="(*post_link*)#comments" title="نظرات">(*post_comment_count*) نظر</a></li>
+										</ul>
+										<a href="(*post_link*)" class="postlist-detail-more">نمایش تصویر</a>
+									</div>
+									<div class="postlist-image">
+										<img title="(*post_title*)" src="(*post_image*)">
+									</div>
+									<h3><a href="(*post_link*)">(*post_title*)</a></h3>
+								</div>
+							</div>
+						</view:post_list>
+					</div><!-- /post -->
+				</box:post_list>
+				<!-- پایان خلاصه مطلب -->
+<!-- Massimo Margagnoni -->
+<a href=""><img src="images/1.jpg"></a>
+<img src="images/2.jpg">
+<img src="images/3.jpg">
+
+<!-- Giuseppe Milo -->
+<img src="images/4.jpg">
+<img src="images/5.jpg">
+<img src="images/6.jpg">
+
+<!-- GÃķrlitzPhotography -->
+<img src="images/7.jpg">
+<img src="images/8.jpg">
+<img src="images/9.jpg">
+
+<!-- All Photos Licensed Under Creative Commons 2.0 -->
+<!-- https://creativecommons.org/licenses/by/2.0/legalcode  -->
+</body>
+</html>
